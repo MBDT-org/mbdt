@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Backend local data (never commit learner data)
+backend/mbdt.db*
+backend/*.sqlite*
+*.db-wal
+*.db-shm
+backend/.env
+
+# Node / Vite
+node_modules/
+/dist/
+vite.config.ts.timestamp-*
+
+# Env files (any level)
+.env
+
+# Custom word sets are user content; keep only the shipped example.
+backend/data/word_sets/*.json
+!backend/data/word_sets/*.example.json
+
+# Backup files
+*.bak
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Cloudflare / Wrangler
+.wrangler/
+site/.wrangler/

@@ -1,0 +1,11 @@
+{
+  "id": "week-3-spelling",
+  "label": "Week 3 spelling (short a)",
+  "words": [
+    { "word": "cat", "phoneme": "short-a" },
+    { "word": "hat", "phoneme": "short-a" },
+    { "word": "map", "phoneme": "short-a" },
+    { "word": "bat", "phoneme": "short-a" },
+    { "word": "jam", "phoneme": "short-a" }
+  ]
+}

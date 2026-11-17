@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MBDT</title>
+  <meta name="description" content="MBDT turns Orton-Gillingham style literacy exercises into short, playful sessions. A specialized algorithm targets each learner's weakest words, fonts and sounds." />
+  <meta name="theme-color" content="#6B4EFF" />
+  <meta property="og:title" content="MBDT · adaptive literacy practice" />
+  <meta property="og:description" content="Literacy exercises that adapt to every learner. Self-Hosted, MIT licensed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://landing.mbdt-project.workers.dev/" />
+  <meta property="og:image" content="https://landing.mbdt-project.workers.dev/assets/screens/home.png" />
+  <meta property="og:image:width" content="2880" />
+  <meta property="og:image:height" content="1800" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://landing.mbdt-project.workers.dev/assets/screens/home.png" />
+  <link rel="canonical" href="https://landing.mbdt-project.workers.dev/" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="MBDT home">
+        <img src="assets/logo.svg" alt="" width="40" height="40" />
+        <span class="brand-word">MBDT</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#exercises">Exercises</a>
+        <a href="#engine">Progress</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#start">Get the source</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="https://github.com/MBDT-org/mbdt" title="Source code on GitHub">
+        <svg viewBox="0 0 19 19" width="17" height="17" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M9.36 1.85a7.85 7.85 0 0 0-2.48 15.3c.39.07.53-.17.53-.38l-.01-1.45c-2.17.47-2.62-.94-2.62-.94-.35-.91-.86-1.14-.86-1.14-.71-.48.05-.48.05-.48.79.05 1.2.8 1.2.8.7 1.2 1.82.86 2.27.65.06-.5.27-.86.49-1.05-1.73-.18-3.55-.86-3.55-3.87 0-.86.31-1.56.8-2.1-.08-.2-.35-1 .08-2.08 0 0 .65-.21 2.14.8a7.5 7.5 0 0 1 1.94-.26c.66 0 1.33.09 1.95.26 1.48-1.01 2.14-.8 2.14-.8.43 1.08.16 1.88.08 2.08.5.54.8 1.24.8 2.1 0 3-1.82 3.68-3.56 3.87.28.25.53.72.53 1.46l-.01 2.15c0 .21.14.46.53.38a7.85 7.85 0 0 0-2.45-15.29Z" clip-rule="evenodd"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ---------------------------------------------------------------- hero -->
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot-live" aria-hidden></span>Self-Hosted</p>
+          <h1>Literacy Exercises That <span class="hl">Adapt to Every Learner</span></h1>
+          <p class="lede">
+            MBDT turns Orton-Gillingham style literacy exercises into short, playful
+            sessions. A specialized algorithm targets each learner&rsquo;s weakest words, fonts and
+            sounds.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/MBDT-org/mbdt">Get the code</a>
+            <a class="btn btn-ghost" href="#engine">See how it adapts</a>
+          </div>
+          <p class="hero-note">MIT License</p>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="device">
+            <div class="device-bar" aria-hidden>
+              <span></span><span></span><span></span>
+              <em>localhost:5173</em>
+            </div>
+            <img src="assets/screens/home.png"
+                 alt="MBDT home screen: a lesson path with four activities, daily quests and a word-mastery ring."
+                 width="1440" height="900" loading="eager" />
+          </figure>
+          <div class="float-card float-xp" aria-hidden>
+            <strong>⚡ 510</strong><span>XP earned</span>
+          </div>
+          <div class="float-card float-streak" aria-hidden>
+            <span class="flame"></span><strong>7</strong><span>day streak</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------- facts -->
+    <section class="fact-strip" aria-label="At a glance">
+      <div class="shell facts">
+        <div class="fact"><strong>Local DB</strong><span>names, history and scores</span></div>
+        <div class="fact"><strong>4</strong><span>practice activities</span></div>
+        <div class="fact"><strong>Algorithm</strong><span>targets weak words</span></div>
+        <div class="fact"><strong>MIT</strong><span>free to use and adapt</span></div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------ features -->
+    <section class="section" id="features">
+      <div class="shell">
+        <header class="section-head">
+          <p class="kicker">Why we made this</p>
+          <h2>Practice Built for Every Learner</h2>
+          <p class="section-sub">
+            Traditional literacy practice can be boring and non-adaptive. We digitized it
+            and added personalization, so the exercises stay familiar while the content
+            adapts.
+          </p>
+        </header>
+        <div class="card-grid">
+          <article class="feature card">
+            <span class="feature-icon tone-violet" aria-hidden>🎯</span>
+            <h3>Targets the Weak Spots</h3>
+            <p>
+              Every response is recorded locally and processed by an algorithm that
+              identifies fragile words. Adaptive repetition brings weaknesses back sooner
+              and lets mastered words fade.
+            </p>
+          </article>
+          <article class="feature card">
+            <span class="feature-icon tone-amber" aria-hidden>🌱</span>
+            <h3>Gentle by Design</h3>
+            <p>
+              A wrong answer is not a penalty. Uncertain answers adjust the next round only
+              slightly, so one shaky attempt never erases progress.
+            </p>
+          </article>
+          <article class="feature card">
+            <span class="feature-icon tone-blue" aria-hidden>🔒</span>
+            <h3>You Control What Leaves the Device</h3>
+            <p>
+              Names, reviews and settings stay in one local file. The guardian chooses the
+              word set and story interests; the admin configures the AI provider and models.
+              Only the specific word, audio clip, image or prompt a feature needs is sent.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------ exercises -->
+    <section class="section section-tint" id="exercises">
+      <div class="shell">
+        <header class="section-head">
+          <p class="kicker">What a session looks like</p>
+          <h2>Four Activities</h2>
+          <p class="section-sub">
+            Four short activities, with short breaks between them.
+          </p>
+        </header>
+
+        <div class="exercise-grid" data-exercise-tabs>
+          <button type="button" class="exercise card" data-shot="ex1" aria-pressed="false">
+            <span class="exercise-emoji" aria-hidden>🗣️</span>
+            <h3>Say the word</h3>
+            <p>Words drift across the screen in different fonts. The learner says each one and the app checks the pronunciation.</p>
+          </button>
+          <button type="button" class="exercise card" data-shot="ex2" aria-pressed="false">
+            <span class="exercise-emoji" aria-hidden>✍️</span>
+            <h3>Build the word</h3>
+            <p>Hear a word, then spell it by typing, writing it, or photographing handwriting.</p>
+          </button>
+          <button type="button" class="exercise card" data-shot="ex3" aria-pressed="false">
+            <span class="exercise-emoji" aria-hidden>👂</span>
+            <h3>Sort the sounds</h3>
+            <p>Pick every word that shares the target sound. Every pick is recorded as evidence for the words involved.</p>
+          </button>
+          <button type="button" class="exercise card" data-shot="ex4" aria-pressed="false">
+            <span class="exercise-emoji" aria-hidden>📖</span>
+            <h3>Read a story</h3>
+            <p>A short, safe story is written from the learner's weakest words. Three literal comprehension questions follow.</p>
+          </button>
+        </div>
+
+        <p class="shot-hint">Click an activity to preview it.</p>
+
+        <div class="shot-gallery" data-gallery>
+          <figure class="shot" data-shot="ex1">
+            <img src="assets/screens/ex1-speak.png"
+                 alt="Speaking screen: one large word, a hold-to-speak button and a progress bar."
+                 width="1280" height="632" loading="lazy" />
+            <figcaption>Say the word: one word, one mic, an immediate verdict.</figcaption>
+          </figure>
+          <figure class="shot" data-shot="ex2">
+            <img src="assets/screens/ex2-spell.png"
+                 alt="Spelling screen: a play-word button, type/write/photo modes and a text input."
+                 width="1280" height="500" loading="lazy" />
+            <figcaption>Build the word: type it, write it on the canvas, or photograph handwriting.</figcaption>
+          </figure>
+          <figure class="shot" data-shot="ex3">
+            <img src="assets/screens/ex3-sort.png"
+                 alt="Sorting screen: six word buttons and a target sound label."
+                 width="1280" height="400" loading="lazy" />
+            <figcaption>Sort the sounds: pick every word that shares the target sound.</figcaption>
+          </figure>
+          <figure class="shot" data-shot="ex4">
+            <img src="assets/screens/ex4-story.png"
+                 alt="Story screen: a generated short story followed by comprehension questions."
+                 width="1280" height="740" loading="lazy" />
+            <figcaption>Read a story: written from the learner&rsquo;s weakest words, then three questions.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------- engine -->
+    <section class="section" id="engine">
+      <div class="shell">
+        <div class="engine-intro">
+          <p class="kicker">For parents and guardians</p>
+          <h2>See Which Words Need Practice</h2>
+          <p>
+            The home screen shows progress panels for grown-ups: words mastered, an
+            ability chart, and a searchable word list with mastery, attempts and last
+            practice. Guardians can review the record, change the word set, set story
+            interests and choose topics to avoid; the admin configures the AI provider and
+            models.
+          </p>
+          <ol class="steps">
+            <li><strong>Practice.</strong> Every response is recorded on the device.</li>
+            <li><strong>Review.</strong> The progress panels show which words are fragile and which are mastered.</li>
+            <li><strong>Adapt.</strong> Weaker words return sooner; mastered words appear less often.</li>
+          </ol>
+          <a class="btn btn-ghost" href="https://github.com/MBDT-org/mbdt">View the source</a>
+        </div>
+
+        <div class="panel-gallery">
+          <div class="panel-col">
+            <figure class="panel-shot">
+              <img src="assets/screens/panel-mastery.png" width="910" height="200" loading="lazy"
+                   alt="Words mastered panel showing the share of the word set that is solid, with counts for mastered, learning and new words." />
+              <figcaption>Words mastered at a glance.</figcaption>
+            </figure>
+            <figure class="panel-shot">
+              <img src="assets/screens/panel-progress.png" width="910" height="538" loading="lazy"
+                   alt="Progress panel with ability bars for speaking, spelling, recognition and comprehension, measured against a goal line." />
+              <figcaption>Skills tracked against the goal.</figcaption>
+            </figure>
+          </div>
+          <figure class="panel-shot panel-shot-words">
+            <img src="assets/screens/panel-words.png" width="838" height="1572" loading="lazy"
+                 alt="Word list panel with search, tier filters, and rows showing mastery percentage, attempts, last practice and mastery tier." />
+            <figcaption>Every word, its mastery, attempts and last practice.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------- privacy -->
+    <section class="section section-tint" id="privacy">
+      <div class="shell">
+        <header class="section-head">
+          <p class="kicker">Privacy and control</p>
+          <h2>The learner record stays on your device</h2>
+          <p class="section-sub">
+            Names, attempts, scores and guardian settings live in one SQLite file you control.
+            The guardian chooses the word set and story interests; the admin controls the AI
+            provider. You decide which features to use, and only the specific word, clip, image
+            or prompt a feature needs is sent.
+          </p>
+        </header>
+        <div class="privacy-grid">
+          <div class="card privacy-card">
+            <h3><span class="tick" aria-hidden>✓</span> Stays on your machine</h3>
+            <ul class="check-list">
+              <li>Learner names and profiles</li>
+              <li>Every review, attempt and confidence score</li>
+              <li>Guardian settings, interests and word sets</li>
+              <li>Generated stories and comprehension answers</li>
+            </ul>
+            <p class="muted">One SQLite file you can copy or delete.</p>
+          </div>
+          <div class="card privacy-card">
+            <h3><span class="arrow" aria-hidden>→</span> You control what leaves</h3>
+            <ul class="check-list check-list-alt">
+              <li>A single word, to be spoken aloud</li>
+              <li>One short audio clip, for pronunciation checking</li>
+              <li>One handwriting image, for spelling checks</li>
+              <li>The requested word list + approved interests, for the story</li>
+            </ul>
+            <p class="muted">No names, history or identifiers are attached.</p>
+          </div>
+        </div>
+        <p class="privacy-note">
+          Retention is a provider and gateway policy, not something this app can guarantee.
+          Requesty and OpenRouter both offer zero-data-retention routing for participating
+          models; if you change the gateway, model ids or account settings, check their
+          terms first. Story output also passes a keyword safety filter.
+        </p>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------- start -->
+    <section class="section" id="start">
+      <div class="shell start-grid">
+        <div>
+          <p class="kicker">Get the source</p>
+          <h2>Setup lives on GitHub</h2>
+          <p>
+            MBDT runs on your own machine. The GitHub repository has the full source,
+            the step-by-step setup guide, model and key configuration, and the issue
+            tracker.
+          </p>
+          <p class="muted">
+            No MBDT account, no cloud sync and no analytics. You only need an API key
+            from Requesty or OpenRouter for the speech, handwriting and story features.
+          </p>
+          <a class="btn btn-primary" href="https://github.com/MBDT-org/mbdt">Open the GitHub page</a>
+        </div>
+        <div class="card config-card">
+          <h3>In the repository</h3>
+          <dl class="config-list">
+            <div><dt>Source</dt><dd>Python + React, MIT License</dd></div>
+            <div><dt>Setup</dt><dd>Windows, macOS and Linux</dd></div>
+            <div><dt>Models</dt><dd>Requesty or OpenRouter</dd></div>
+            <div><dt>Data</dt><dd>Local SQLite file</dd></div>
+          </dl>
+          <p class="muted">Word-list sources and licences are documented in the repository.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------- cta -->
+    <section class="cta-band">
+      <div class="shell cta-inner">
+        <div>
+          <h2>Source and setup are on GitHub</h2>
+          <p>Run it locally, read the code, or open an issue. The README covers every platform.</p>
+        </div>
+        <a class="btn btn-yellow" href="https://github.com/MBDT-org/mbdt">Visit GitHub</a>
+      </div>
+    </section>
+  </main>
+
+
+    <!-- ------------------------------------------------------- disclaimer -->
+    <section class="disclaimer" id="disclaimer" aria-labelledby="disclaimer-title">
+      <div class="shell disclaimer-inner">
+        <div>
+          <h2 id="disclaimer-title">A practice tool, not a treatment</h2>
+          <p>
+            MBDT is <strong>supplementary reading and spelling practice</strong>. It does not
+            diagnose, treat, cure or prevent dyslexia or any other condition, and no
+            educational, health or other outcome is claimed or guaranteed. It is not a
+            substitute for assessment or intervention by a qualified teacher, educational
+            psychologist, speech-language therapist or doctor. If you are concerned about a
+            child's reading, seek professional advice.
+          </p>
+          <p>
+            Exercises are AI-assisted, so generated stories or transcriptions may be wrong or
+            surprising; a parent or guardian should supervise use. Word lists come from
+            general-purpose phonics and sight-word sources and are not individually
+            clinically validated. The software is provided &ldquo;as is&rdquo;, without
+            warranty of any kind, under the MIT License.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="" width="36" height="36" />
+        <strong>MBDT</strong>
+        <p>Supplementary practice only. Not therapy, diagnosis or medical advice. No outcomes claimed or guaranteed. MIT licensed, provided “as is”.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/MBDT-org/mbdt">Source</a>
+        <a href="https://github.com/MBDT-org/mbdt/blob/main/LICENSE">MIT License</a>
+        <a href="https://github.com/MBDT-org/mbdt/issues">Issues</a>
+        <a href="https://github.com/MBDT-org/mbdt/blob/main/README.md">Setup guide</a>
+      </nav>
+    </div>
+    <div class="shell footer-fine">
+      <span>Built with FastAPI, React and SQLite.</span>
+      <span>Word lists are bundled from public-domain and openly licensed sources.</span>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
